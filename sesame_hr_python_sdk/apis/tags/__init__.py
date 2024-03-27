@@ -1,0 +1,45 @@
+# do not import all endpoints into this module because that uses a lot of memory and stack frames
+# if you need the ability to import all endpoints from this module, import them with
+# from sesame_hr_python_sdk.apis.tag_to_api import tag_to_api
+
+import enum
+
+
+class TagValues(str, enum.Enum):
+    RECRUITMENT = "Recruitment"
+    WORK_ENTRIES = "Work Entries"
+    TIME_ENTRIES = "Time Entries"
+    EMPLOYEES = "Employees"
+    VACATION_DAY_OFF_REQUESTS = "Vacation Day Off Requests"
+    ABSENCE_DAY_OFF_REQUESTS = "Absence Day Off Requests"
+    HOLIDAY_CALENDARS = "Holiday Calendars"
+    AGREEMENTS = "Agreements"
+    CONTRACTS = "Contracts"
+    SALARIES = "Salaries"
+    DEPARTMENTS = "Departments"
+    OFFICES = "Offices"
+    CUSTOM_FIELDS = "Custom Fields"
+    STATISTICS = "Statistics"
+    HOLIDAYS = "Holidays"
+    CUSTOMERS = "Customers"
+    PROJECTS = "Projects"
+    EMPLOYEE_MANAGERS = "Employee Managers"
+    EMPLOYEE_ASSIGNATIONS_ROLES = "Employee Assignations Roles"
+    EMPLOYEE_DEPARTMENT_ASSIGNATIONS = "Employee Department Assignations"
+    EMPLOYEE_OFFICE_ASSIGNATIONS = "Employee Office Assignations"
+    VACATION_CALENDARS = "Vacation Calendars"
+    ABSENCE_CALENDARS = "Absence Calendars"
+    EMPLOYEE_SCHEDULE_TEMPLATES = "Employee Schedule Templates"
+    EMPLOYEE_AGREEMENTS = "Employee Agreements"
+    DOCUMENTS = "Documents"
+    SECURITY = "Security"
+    COMPANY = "Company"
+    ROLES = "Roles"
+    CHECK_TYPES = "Check Types"
+    WORK_BREAKS = "Work Breaks"
+    CHECK_VALIDATION = "Check Validation"
+    VACATION_CONFIGURATIONS = "Vacation Configurations"
+    VACATION_DAY_OFF = "Vacation Day Off"
+    ABSENCE_TYPES = "Absence Types"
+    ABSENCE_DAY_OFF = "Absence Day Off"
+    SCHEDULE_TEMPLATES = "ScheduleTemplates"
